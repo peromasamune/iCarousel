@@ -511,17 +511,17 @@ NSComparisonResult compareViewDepth(UIView *view1, UIView *view2, iCarousel *sel
             return [_delegate carousel:self itemTransformForOffset:offset baseTransform:transform];
         }
         case iCarouselTypeLinear:
-        {
-            CGFloat spacing = [self valueForOption:iCarouselOptionSpacing withDefault:1.0];
-            if (_vertical)
-            {
-                return CATransform3DTranslate(transform, 0.0, offset * _itemWidth * spacing, 0.0);
-            }
-            else
-            {
-                return CATransform3DTranslate(transform, offset * _itemWidth * spacing, 0.0, 0.0);
-            }
-        }
+//        {
+//            CGFloat spacing = [self valueForOption:iCarouselOptionSpacing withDefault:1.0];
+//            if (_vertical)
+//            {
+//                return CATransform3DTranslate(transform, 0.0, offset * _itemWidth * spacing, 0.0);
+//            }
+//            else
+//            {
+//                return CATransform3DTranslate(transform, offset * _itemWidth * spacing, 0.0, 0.0);
+//            }
+//        }
         case iCarouselTypeRotary:
         case iCarouselTypeInvertedRotary:
         {
